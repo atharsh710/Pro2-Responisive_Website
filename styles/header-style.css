@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+button{
+   display: none;
+   overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: left;
+    padding: max(1vh , 2.05rem);
+    background:rgb(45, 146, 230);
+    backdrop-filter: blur(1rem);
+    z-index: 1;
+    position: fixed;
+}
+head{
+    display: flex;
+    justify-content: right;
+    padding: max(1vh , 3rem);
+    background-color: rgb(21, 107, 179);
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+.logo{
+    font-size: 40px;
+    color: rgb(255, 255, 255);  
+    display: flex;
+    justify-content: right;
+    margin-left: 55%;
+    margin-top: 1.5%;
+    z-index: 1;
+    position: fixed; 
+    font-family: 'Raleway' , sans-serif; 
+    font-weight: 300;
+    width: 40%;
+
+}
+ul{ 
+    list-style: none;
+    top: 1rem;
+}
+li{
+    color: rgb(0, 0, 0);
+    display: inline;
+    margin: 3rem;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none ;
+    transition: .6s ease;
+    opacity: 1;
+}
+li:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+@media (max-width: 52em){
+    body{
+        background-image: url(/img/pattern-background-mobile.svg);
+        background-size: cover;
+        background-position: center;
+    }
+    head{
+        padding: max(2vh , 2.9rem);
+    }
+    .logo{
+        font-size: 30px;
+        margin-top: min(4%, 2rem);
+        width: 40%;
+    }
+    li{
+        margin: 1rem;
+        font-size: 22px;
+    }
+}
+@media (max-width: 35em) {
+    body{
+        background-image: url(/nav-response/img/pattern-background-mobile.svg);
+        background-size: cover;
+        background-position: center;
+    }
+    header{
+        position: fixed;
+        inset: 0 0 0 0%;
+        justify-content: left;
+        background:rgba(49, 142, 218, 0.918);
+        transition: .5s ease-in;
+        transform: translate(100%);
+    }
+    header[data-visible="true"]{
+        transform: translate(0%);
+        transition: .5s ease-out;
+        z-index: 2;
+    }
+    @supports (backdrop-filter: blur(1rem)){
+        header{
+            background:rgba(0, 0, 0, 0.233);
+            backdrop-filter: blur(2rem);
+            
+        }
+    }
+    .logo{
+        font-size: 30px;
+        color: rgb(255, 255, 255);  
+        display: flex;
+        justify-content: right;
+        margin-left: 5%;
+        margin-top:  4.5%;
+        z-index: 1;
+        position: fixed; 
+        font-family: 'Raleway' , sans-serif; 
+        font-weight: 300;
+    }
+
+    ul{
+        top: 2rem;
+    }
+    li{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        margin: 5rem;
+    }
+    body{ 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        background-image: url(/nav-response/img/pattern-background-mobile.svg);
+        overflow: hidden;
+    }
+    button{
+        background-image: url(/img/menu.png);
+       width: 10px;
+       height: 10px;
+       background-repeat: no-repeat;
+       padding: max(12px, 2%);
+       border: none;
+       overflow: hidden;
+       display: block;
+       position: left;
+       left: 80%;
+       top: 4%;     
+       background-color: transparent;
+       background-size: cover;
+       background-position: center;
+        transition: .5s ease-out;
+        transform: translate(-5rem);
+    }
+    button[data-visible="true"]{
+        transform: translate(0rem);
+        background-image:url(/img/cancel.png);
+    }
+
+
+    button:hover{
+        cursor: pointer;
+    }
+}
+@media (max-width: 25em) {
+    body{
+        background-image: url(/nav-response/img/pattern-background-mobile.svg);
+        background-size: cover;
+        background-position: right;
+    }
+    .logo{
+        font-size: 26px;
+        margin-top: 5%;
+        width: 65%;
+    }
+}
+@media (min-width: 52em){
+    .logo{
+        font-size: 40px;
+        margin-left: 55%;
+        margin-top: min(3%, 3vh);
+    }
+    li{
+        font-size: 25px;
+        margin-left: 1rem;
+    }
+}
+ 
