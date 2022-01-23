@@ -4,7 +4,6 @@
 }
 body{
     background-image: url(/../Pro2-Responisive_Website/img/pattern-background-desktop.svg);
-    background-image: url(/img/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -67,7 +66,6 @@ li:hover{
 @media (max-width: 52em){
     body{
         background-image: url(/../Pro2-Responisive_Website/img/pattern-background-mobile.svg);
-        background-image: url(/img/pattern-background-mobile.svg);
         background-size: cover;
         background-position: center;
     }
@@ -87,7 +85,6 @@ li:hover{
 @media (max-width: 35em) {
     body{
         background-image: url(/../Pro2-Responisive_Website/img/pattern-background-mobile.svg);
-        background-image: url(/img/pattern-background-mobile.svg);
         background-size: cover;
         background-position: center;
     }
@@ -138,11 +135,9 @@ li:hover{
         background-size: cover;
         background-position: top;
         background-image: url(/../Pro2-Responisive_Website/img/pattern-background-mobile.svg);
-        background-image: url(/img/pattern-background-mobile.svg);
     }
     button{
        background-image: url(/../Pro2-Responisive_Website/img/menu.png);
-       background-image: url(/img/menu.png);
        width: 10px;
        height: 10px;
        background-repeat: no-repeat;
@@ -162,7 +157,6 @@ li:hover{
     button[data-visible="true"]{
         transform: translate(0rem);
         background-image:url(/../Pro2-Responisive_Website/img/cancel.png);
-        background-image: url(/img/cancel.png);
     }
 
 
@@ -173,7 +167,6 @@ li:hover{
 @media (max-width: 25em) {
     body{
         background-image: url(/../Pro2-Responisive_Website/img/pattern-background-mobile.svg);
-        background-image: url(/img/pattern-background-mobile.svg);
         background-size: cover;
         background-position: right;
     }
