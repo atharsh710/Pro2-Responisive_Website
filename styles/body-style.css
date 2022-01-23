@@ -5,14 +5,14 @@
 .flex-box{
     font-family: Rubik, sans-serif;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     width: 80%;
-    margin: max(13%, 2rem);
+    margin: max(10%, 2rem);
 }
 .box-1{
     display: flex;
-    line-height: 2.5rem;
+    line-height: 2rem;
     margin-bottom: 2%;
 }
 .img1{
@@ -26,22 +26,28 @@
     margin-bottom: 3%;
 }
 .box-3{
-    line-height: 3rem;
+    line-height: 2rem;
     margin-bottom: 3%;
 }
 .box-4{
-    line-height: 3rem;
+    line-height: 2rem;
 }
 @media (min-width: 52em){
     .img1{
         width: 100%;
         height: 30%;
     }
+    .flex-box{
+        margin-top: max(12% , 2rem);
+    }
 }
 @media (max-width: 80em){
     .img1{
         width: 100%;
         height: 25%;
+    }
+    .flex-box{
+        margin-top: 15%;
     }
 }
 @media (max-width: 70em) {
@@ -57,6 +63,9 @@
         height: 15%;
         overflow-x:hidden;
     }
+    .flex-box{
+        margin-top: 20%;
+    }
 }
 @media (max-width: 45em) {
     .img1{
@@ -64,17 +73,26 @@
         height: 12%;
         overflow-x:hidden;
     }
+    .flex-box{
+        margin-top: 24%;
+    }
 }
 @media (max-width: 35em) {
     .img1{
         width: 100%;
         height: 9%;
     }
+    .flex-box{
+        margin-top: 27%;
+    }
 }
 @media (max-width: 28em) {
     .img1{
         width: 100%;
         height: 6%;
+    }
+    .flex-box{
+        margin-top: 32%;
     }
 
 
