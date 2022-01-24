@@ -6,8 +6,73 @@ footer{
 }
 foot{
     padding: 3%;
-    display: flex;
-    font-size: 30px;
+    font-size: 37px;
     font-family: 'Raleway' , sans-serif; 
-    
+}
+foot:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+p{
+    padding: 4%;
+    font-family: 'Raleway', sans-serif;
+}
+p:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.para{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 80%;
+    font-size: 20px;
+}
+.link{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cp{
+    font-size: 15px;
+    color: rgb(174, 243, 236);
+}
+.cp:hover{
+    opacity: 1;
+}
+@media (max-width: 90em) {
+    foot{
+        font-size: 30px;
+    }
+    .para{
+        width: 80%;
+        font-size: 20px;
+    }
+}
+@media (max-width: 80em) {
+    foot{
+        font-size: 25px;
+    }
+}
+@media (max-width: 70em) {
+    foot{
+        font-size: 24px;
+    }
+}
+@media (min-width: 20em) {
+    foot{
+        font-size: 23px;
+        padding: 3%;
+        width: 10em;
+    }
+    .para{
+        width: 90%;
+        font-size: 18px;
+    }
 }
