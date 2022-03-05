@@ -16,4 +16,3 @@ const navtoggle = document.querySelector('button');
             navtoggle.setAttribute('data-visible', false);
         }
     });
-

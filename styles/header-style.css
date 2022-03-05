@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(/../Pro2-Responisive_Website/img/pattern-background-desktop.svg);
     background-image: url(/img/pattern-background-desktop.svg);
@@ -17,7 +20,7 @@ header{
     display: flex;
     justify-content: left;
     padding: max(1vh , 2.05rem);
-    background:rgb(45, 146, 230);
+    background:rgb(216, 238, 255);
     backdrop-filter: blur(1rem);
     z-index: 1;
     position: fixed;
@@ -26,7 +29,7 @@ head{
     display: flex;
     justify-content: right;
     padding: max(1vh , 3rem);
-    background-color: rgb(21, 107, 179);
+    background-color: rgb(209, 234, 255);
     z-index: 1;
     width: 100%;
     position: fixed;
@@ -34,7 +37,7 @@ head{
 }
 .logo{
     font-size: 40px;
-    color: rgb(255, 255, 255);  
+    color: rgb(24, 24, 24);  
     display: flex;
     justify-content: right;
     margin-left: 55%;
@@ -78,6 +81,7 @@ li:hover{
         font-size: 30px;
         margin-top: min(4%, 2rem);
         width: 40%;
+        color: black;
     }
     li{
         margin: 1rem;
@@ -95,7 +99,7 @@ li:hover{
         position: fixed;
         inset: 0 0 0 0%;
         justify-content: left;
-        background:rgba(49, 142, 218, 0.918);
+        background:rgba(216, 238, 255, 0.952);
         transition: .5s ease-in;
         transform: translate(100%);
     }
@@ -113,7 +117,7 @@ li:hover{
     }
     .logo{
         font-size: 30px;
-        color: rgb(255, 255, 255);  
+        color: rgb(0, 0, 0);  
         display: flex;
         justify-content: right;
         margin-left: 5%;

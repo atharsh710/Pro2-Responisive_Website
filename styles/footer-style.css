@@ -1,8 +1,10 @@
 footer{
     display: flex;
     justify-content: left;
-    background-color: rgb(0, 76, 138);
+    background-color: rgb(231, 235, 238);
     width: 100%;
+    margin-top: 20px;
+    position: relative;
 }
 foot{
     padding: 3%;
@@ -14,7 +16,7 @@ foot:hover{
     opacity: 0.5;
 }
 a{
-    color: white;
+    color: black;
     cursor: pointer;
     text-decoration: none;
 
@@ -36,15 +38,18 @@ p:hover{
 }
 .link{
     color: black;
-    cursor: pointer;
     text-decoration: none;
 }
 .cp{
     font-size: 15px;
-    color: rgb(174, 243, 236);
+    color: rgb(0, 12, 11);
 }
 .cp:hover{
     opacity: 1;
+}
+.apps{
+    width: 30px;
+    cursor: pointer;
 }
 @media (max-width: 90em) {
     foot{
@@ -64,6 +69,9 @@ p:hover{
     foot{
         font-size: 24px;
     }
+    .apps{
+        width: 25px;
+}
 }
 @media (min-width: 20em) {
     foot{

@@ -9,6 +9,11 @@
     flex-wrap: wrap;
     width: 80%;
 }
+.title{
+    font-family: Rubik, sans-serif; 
+    font-size: 7vh; 
+    margin-bottom: 5%;
+}
 .box-1{
     display: flex;
     line-height: 2rem;
@@ -44,6 +49,10 @@
     }
     .flex-box{
         margin-top: 15%;
+    }
+    .title{
+        font-size: 5vh; 
+        margin-bottom: 1%;
     }
 }
 @media (max-width: 70em) {
@@ -90,6 +99,4 @@
     .flex-box{
         margin-top: 32%;
     }
-
-
 }
